@@ -60,12 +60,13 @@
 
 
 - (NSArray *)dataTypesForActivityType:(NSString *)type {
-    if (!self.dataTypes[type]) {
-        NSArray *dataTypes = [[self.delegate activityViewController:self dataTypeIdentifiersForActivityType:type] copy];
-        NSParameterAssert([dataTypes count] == self.numberOfItems);
-        self.dataTypes[type] = dataTypes;
-    }
-    return self.dataTypes[type];
+    return nil;
+//    if (!self.dataTypes[type]) {
+//        NSArray *dataTypes = [[self.delegate activityViewController:self dataTypeIdentifiersForActivityType:type] copy];
+//        NSParameterAssert([dataTypes count] == self.numberOfItems);
+//        self.dataTypes[type] = dataTypes;
+//    }
+//    return self.dataTypes[type];
 }
 
 
